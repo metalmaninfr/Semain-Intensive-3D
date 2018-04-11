@@ -77,6 +77,14 @@ function m_main()
 function m_footer()
 {
     ?>
+
+    <form method="post" action="./assets/include/addUser.php">
+        <input type="text" name="userName">
+        <input type="text" name="f">
+        <input type="text" name="adress">
+        <input type="text" name="mail">
+        <button type="submit">Valider</button>
+    </form>
     </body>
     </html>
     <?php

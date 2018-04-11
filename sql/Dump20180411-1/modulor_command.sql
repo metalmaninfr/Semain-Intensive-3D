@@ -56,3 +56,9 @@ UNLOCK TABLES;
 -- Dump completed on 2018-04-11 11:33:52
 
 
+INSERT INTO
+  `users`
+    (`user_name`, `user_password`,`user_adress`, `user_email`)
+  VALUES
+    ('toto', 'titi', 'toto', 'lili')
+;
