@@ -103,6 +103,7 @@ body {
   transform: translateX(-50%);
   font-size: 4rem;
   color: #CCA151;
+  cursor: pointer;
 }
 
 
@@ -169,4 +170,8 @@ body {
 
 .stand-link:visited {
   color: black;
+}
+
+.hidden {
+  display: none;
 }
