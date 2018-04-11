@@ -16,3 +16,4 @@ m_header();
 m_main();
 m_footer();
 
+var_dump($_SESSION);
