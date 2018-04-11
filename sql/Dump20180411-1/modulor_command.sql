@@ -16,29 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `users`
+-- Table structure for table `command`
 --
 
-DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `command`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `users` (
-  `id_user` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(45) NOT NULL,
-  `user_password` varchar(45) NOT NULL,
-  PRIMARY KEY (`id_user`),
-  UNIQUE KEY `idusers_UNIQUE` (`id_user`),
-  UNIQUE KEY `user_name_UNIQUE` (`user_name`)
+CREATE TABLE `command` (
+  `id_command` int(10) unsigned NOT NULL,
+  `id_user` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `price` int(11) NOT NULL,
+  `nb_piece` int(11) NOT NULL,
+  `stand_size` int(11) NOT NULL,
+  PRIMARY KEY (`id_command`),
+  UNIQUE KEY `id_command_UNIQUE` (`id_command`),
+  KEY `id_user_idx` (`id_user`),
+  CONSTRAINT `id_user` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `command`
 --
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+LOCK TABLES `command` WRITE;
+/*!40000 ALTER TABLE `command` DISABLE KEYS */;
+/*!40000 ALTER TABLE `command` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-10 17:38:07
+-- Dump completed on 2018-04-11 11:33:52
