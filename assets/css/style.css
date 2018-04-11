@@ -1,4 +1,106 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'lulo';
+}
+
 @font-face {
     font-family: Lulo;
     src: url(../fonts/Lulo_Clean_One_Bold.otf);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2.5vh;
+  z-index: 10;
+}
+
+.headerLogo {
+  height: 5.6rem;
+  width: 6.5rem;
+}
+
+.headerLogo img {
+  height: 100%;
+  width: 100%;
+}
+
+.headerTitle {
+  font-size: 4rem;
+}
+
+.gold {
+  color: #CCA151;
+}
+
+.burgerMenu {
+  position: relative;
+  height: 2.2rem;
+  width: 3.1rem;
+}
+
+.burgerMenuTop, .burgerMenuMid, .burgerMenuBottom {
+  position: absolute;
+  background: #000;
+  height: 0.1rem;
+}
+
+.burgerMenuTop {
+  top: 0;
+  right: 0;
+  width: 1.6rem;
+}
+.burgerMenuMid {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.burgerMenuBottom {
+  bottom: 0;
+  width: 1.6rem;
+}
+
+.section-1 {
+  position: relative;
+  height: 75vh;
+  padding-top: 25vh;
+}
+
+.videoContainer {
+  position: relative;
+  height: 55vh;
+  width: 80%;
+  margin: 0 auto;
+  background: #707070;
+}
+
+.discover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.2rem 2rem;
+  border: 2px solid #fff;
+  z-index: 5;
+}
+
+.scrollBtn {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: #CCA151;
 }
