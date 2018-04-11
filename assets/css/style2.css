@@ -1,0 +1,77 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'lulo';
+}
+
+@font-face {
+    font-family: Lulo;
+    src: url(../fonts/Lulo_Clean_One_Bold.otf);
+}
+
+.stand-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5.3rem;
+}
+.stand-choice {
+  text-align: center;
+}
+.stand-selection {
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+}
+.stand-size {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 14.4rem;
+  height: 5.2rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+
+.stand-size:hover {
+  color: #fff;
+  background-color: #cca151;
+  border: #cca151;
+}
+
+.stand-text {
+  margin-top: 1.4rem;
+}
+
+.stand-unity {
+  margin: 0 auto;
+  width: 89.5rem;
+  height: 40.6rem;
+  background-color: blue;
+  margin-top: 3.6rem;
+}
+
+.stand-accept {
+  font-size: 2.2rem;
+  margin-top: 6rem;
+  /* display: flex;
+  margin: 0 auto;
+  width: 41.3rem;
+  height: 4.8rem;
+  text-align: center; */
+}
+
+.stand-link {
+  color: black;
+  margin-top: 1.3rem;
+  font-size: 2.2rem;
+  padding: 2rem 4rem;
+  border: solid 1px black;
+}
+
+
+.stand-link:visited {
+  color: black;
+}
