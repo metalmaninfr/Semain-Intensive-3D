@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 function m_header()
 {
     ?>
@@ -89,4 +89,12 @@ function m_footer()
     </html>
     <?php
 
+}
+
+function doLogins($tab) {
+    $_SESSION["user"]["id"] = $tab["user_id"];
+    $_SESSION["user"]["name"] = $tab["user_name"];
+    $_SESSION["user"]["email"] = $tab["user_email"];
+    $_SESSION["user"]["adress"] = $tab["user_adress"];
+    $_SESSION["user"]["admin"] = $tab["user_admin"];
 }

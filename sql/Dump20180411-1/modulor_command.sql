@@ -58,7 +58,7 @@ UNLOCK TABLES;
 
 INSERT INTO
   `users`
-    (`user_name`, `user_password`,`user_adress`, `user_email`)
+    (`user_name`, `user_password`,`user_adress`, `user_email`, `user_admin`)
   VALUES
-    ('toto', 'titi', 'toto', 'lili')
+    ('hdseld', 'oto', 'fd', 'chcofsds', false)
 ;
