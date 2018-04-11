@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 function m_header()
 {
     ?>
@@ -45,7 +46,7 @@ function m_main()
 
     <section class="section-1">
         <div class="videoContainer">
-            <video class="video" src="videofile.ogg" autoplay loop ></video>
+            <video class="video" src="" autoplay loop ></video>
             <a href="" class="discover">Découvrir</a>
         </div>
 
@@ -53,22 +54,24 @@ function m_main()
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
-    <section class="stand-choice">
-        <h2 class="stand-title">Choisisser votre stand</h2>
-        <div class="stand-selection">
-            <div class="stand-size">
-                <p class="stand-text">9 M2</p>
+    <section class="section" id="section-stand-choice">
+        <div class="stand-choice">
+            <h2 class="stand-title">Choisisser votre stand</h2>
+            <div class="stand-selection">
+                <div class="stand-size">
+                    <p class="stand-text">9 M2</p>
+                </div>
+                <div class="stand-size">
+                    <p class="stand-text">12 M2</p>
+                </div>
+                <div class="stand-size">
+                    <p class="stand-text">18 M2</p>
+                </div>
             </div>
-            <div class="stand-size">
-                <p class="stand-text">12 M2</p>
+            <div class="stand-unity"></div>
+            <div class="stand-accept">
+                <a class="stand-link" href="dwadad">Choisir cette taille</a>
             </div>
-            <div class="stand-size">
-                <p class="stand-text">18 M2</p>
-            </div>
-        </div>
-        <div class="stand-unity"></div>
-        <div class="stand-accept">
-            <a class="stand-link" href="dwadad">Choisir cette taille</a>
         </div>
     </section>
     <?php
@@ -85,16 +88,9 @@ function m_footer()
         <input type="text" name="mail">
         <button type="submit">Valider</button>
     </form>
+    <script src="./assets/js/main.js"></script>
     </body>
     </html>
     <?php
 
-}
-
-function doLogins($tab) {
-    $_SESSION["user"]["id"] = $tab["user_id"];
-    $_SESSION["user"]["name"] = $tab["user_name"];
-    $_SESSION["user"]["email"] = $tab["user_email"];
-    $_SESSION["user"]["adress"] = $tab["user_adress"];
-    $_SESSION["user"]["admin"] = $tab["user_admin"];
 }
