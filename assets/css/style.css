@@ -107,11 +107,14 @@ body {
 
 
 /* SECTION 2 */
-
+.section {
+  height: 100vh;
+  padding-top: 4vh;
+}
 .stand-title {
   text-align: center;
   font-size: 3rem;
-  margin-top: 5.3rem;
+  padding: 5rem 0;
 }
 .stand-choice {
   text-align: center;
@@ -144,9 +147,9 @@ body {
 
 .stand-unity {
   margin: 0 auto;
-  width: 89.5rem;
-  height: 40.6rem;
-  background-color: blue;
+  width: 70%;
+  height: 50%;
+  background-color: #707070;
   margin-top: 3.6rem;
 }
 
