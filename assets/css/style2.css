@@ -1,20 +1,12 @@
-html {
-  font-size: 62.5%;
+/* SECTION 2 */
+.section {
+  height: 100vh;
+  padding-top: 4vh;
 }
-
-body {
-  font-family: 'lulo';
-}
-
-@font-face {
-    font-family: Lulo;
-    src: url(../fonts/Lulo_Clean_One_Bold.otf);
-}
-
 .stand-title {
   text-align: center;
   font-size: 3rem;
-  margin-top: 5.3rem;
+  padding: 5rem 0;
 }
 .stand-choice {
   text-align: center;
@@ -47,20 +39,15 @@ body {
 
 .stand-unity {
   margin: 0 auto;
-  width: 89.5rem;
-  height: 40.6rem;
-  background-color: blue;
+  width: 70%;
+  height: 50%;
+  background-color: #707070;
   margin-top: 3.6rem;
 }
 
 .stand-accept {
   font-size: 2.2rem;
   margin-top: 6rem;
-  /* display: flex;
-  margin: 0 auto;
-  width: 41.3rem;
-  height: 4.8rem;
-  text-align: center; */
 }
 
 .stand-link {
