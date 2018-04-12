@@ -208,11 +208,13 @@ body {
 }
 
 .btn-link {
+  position: relative;
   font-size: 1.8rem;
   padding: 2rem 5rem;
   border: 2px solid #000;
   color: #212121;
   background: #FAFAFF;
+  z-index: 10;
 }
 
 .decoration {
@@ -251,11 +253,13 @@ body {
 
 
 .inline-flex {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .parts {
@@ -283,12 +287,14 @@ body {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+  margin-left: 15rem;
+  margin-top: 10rem;
 }
 
 .decorationDiamond {
   height: 22rem;
   width: 22rem;
-  border: 2px solid #CCA151;
+  border: 2px solid rgba(204,161,81,0.6);
   transform: rotate(45deg);
   margin-top: 16%;
 }
@@ -411,7 +417,7 @@ input {
 }
 
 .footerFindUs {
-  font-size: .7rem;
+  font-size: 1rem;
 }
 
 .footerFindTitle {
@@ -432,4 +438,76 @@ input {
 .UnityImgFooter {
   height: 100%;
   width: 100%;
+}
+
+
+
+/* ------- PAGE UNITY ----- */
+
+
+.howItWorks {
+  width: 20%;
+  margin-left: 15%;
+  border-left: 1px solid #212121;
+  margin: 0 auto;
+}
+
+
+.unityBox {
+  display: flex;
+}
+
+.greyBox {
+  height: 60%;
+  width: 60%;
+  background: #212121;
+}
+
+.mouseAndText, .mouseAndTextBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.mouseImgSize {
+  height: 4.8rem;
+  width: 3rem;
+  margin-left: 3rem;
+}
+
+.mouseImgSize2 {
+  height: 4.8rem;
+  width: 8.5rem;
+}
+
+.mouseImg {
+  height: 100%;
+  width: 100%;
+}
+
+.mouseText {
+  font-size: 1.2rem;
+  margin-left: 5rem;
+}
+
+.mouseText2 {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.mouseAndTextBottom {
+  margin-top: 6rem;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+.priceBtnContainer {
+  margin-top: 1rem;
+}
+.priceBtn {
+  padding: 1rem 3rem;
+  background: none;
+  border: 1px solid #212121;
 }
