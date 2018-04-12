@@ -57,8 +57,8 @@ UNLOCK TABLES;
 
 
 INSERT INTO
-  `users`
-    (`user_name`, `user_password`,`user_adress`, `user_email`, `user_admin`)
-  VALUES
-    ('hdseld', 'oto', 'fd', 'chcofsds', false)
+  `command`
+  (id_user, price, nb_piece, stand_size, wall)
+VALUES
+  (2, 324, 4, 12, 10)
 ;

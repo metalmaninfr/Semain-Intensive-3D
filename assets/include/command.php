@@ -12,17 +12,20 @@ session_start();
 $sqlCommand = "
 INSERT INTO
   `command`
-  (id_user, price, nb_piece, stand_size)
+  (id_user, price, nb_piece, stand_size, wall)
 VALUES
-  (:userId, price, nbPiece, standSize)
-";
+  (:userId, :price, :nbPiece, :standSize, :wall)
+;";
 
 $stmt = $conn->prepare($sqlCommand);
 $stmt->bindValue(":userId", $_SESSION["user"]["id"]);
-$stmt->bindValue(":price", $_POST['price']);
-$stmt->bindValue(":nbPiece", $_POST['nbPiece']);
-$stmt->bindValue(":standSize", $_POST['standSize']);
+$stmt->bindValue(":price", intval($_POST['price']));
+$stmt->bindValue(":nbPiece", intval($_POST['nbPiece']));
+$stmt->bindValue(":standSize", intval($_POST['standSize']));
+$stmt->bindValue(":wall", intval($_POST['wall']));
 $stmt->execute();
 
-header("location: index.php");
+var_dump($_POST["nbPiece"]  );
+
+header("location: ../../index.php");
 exit;
