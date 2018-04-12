@@ -347,13 +347,22 @@ input {
   font-family: 'lulo';
 }
 
+.footerColor {
+    background: #212121;
+}
+
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 30vh;
-  width: 100%;
-  background: #212121;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
 }
 
 .footerLogoSize {
@@ -362,6 +371,65 @@ input {
 }
 
 .footerLogoImg {
+  height: 100%;
+  width: 100%;
+}
+
+.footerLogoTitle {
+  color: #FAFAFF;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.footerJoinUs {
+  font-size: .7rem;
+}
+
+.footerJoinTitle {
+  margin-bottom: 1rem;
+}
+
+.footerInput {
+  border: 1px solid;
+  border-radius: 5rem;
+  background: #FAFAFF;
+  padding: .5rem 1rem .5rem 1rem;
+  margin-left: -1rem;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerIcon {
+  background: #FAFAFF;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: .5rem .7rem;
+  margin-top: 2rem;
+}
+
+.footerFindUs {
+  font-size: .7rem;
+}
+
+.footerFindTitle {
+  margin-bottom: .8rem;
+}
+
+.footerFindText {
+  color: #FAFAFF;
+  margin-bottom: .8rem;
+}
+
+
+.footerUnitySize {
+  height: 8rem;
+  width: 18.5rem;
+}
+
+.UnityImgFooter {
   height: 100%;
   width: 100%;
 }
