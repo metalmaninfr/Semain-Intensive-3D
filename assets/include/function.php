@@ -24,6 +24,12 @@ function m_header()
         <div class="headerTitle">
             <h1>Modul<span class="gold">or</span></h1>
         </div>
+        <?php if(!$_SESSION["log"] === false || !isset($_SESSION)) :?>
+            <p>c'est conecteé frere <a href="./assets/include/logout.php">Deco</a> <a href="./assets/include/doCommand.php">passer command</a></p>
+            <?php else : ?>
+            <p><a href="./assets/include/log.php">connecte toi frere</a></p></p>
+            <?php endif; ?>
+        </p>
         <div class="burgerMenu">
             <div class="burgerMenuTop"></div>
             <div class="burgerMenuMid"></div>

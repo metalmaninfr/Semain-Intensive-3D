@@ -17,7 +17,7 @@ if (!(isset($_POST["name"]) && isset($_POST["password"]))) {
 
 $conect = "
     SELECT
-        user_id,
+        id_user,
         user_name,
         user_email,
         user_admin,
@@ -30,16 +30,21 @@ $conect = "
           user_password = :password;
 ";
 
-$conect = $conn->prepare($conect);
-$conect->bindValue(':userName', $_POST["name"]);
-$conect->bindValue(':userName', $_POST["password"]);
-$conect->execute();
-$row = $conect->fetch(PDO::FETCH_ASSOC);
+$conectStmt = $conn->prepare($conect);
+$conectStmt->bindValue(':userName', $_POST["name"]);
+$conectStmt->bindValue(':password', $_POST["password"]);
+$conectStmt->execute();
+$row = $conectStmt->fetch(PDO::FETCH_ASSOC);
+
 
 if ($row > 0) {
-    $_SESSION["user"]["id"] = $row["user_id"];
+    $_SESSION["user"]["id"] = $row["id_user"];
     $_SESSION["user"]["name"] = $row["user_name"];
     $_SESSION["user"]["email"] = $row["user_email"];
     $_SESSION["user"]["adress"] = $row["user_adress"];
     $_SESSION["user"]["admin"] = $row["user_admin"];
 }
+
+
+header("location: ../../index.php");
+exit;
