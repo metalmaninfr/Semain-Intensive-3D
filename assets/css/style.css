@@ -292,3 +292,76 @@ body {
   transform: rotate(45deg);
   margin-top: 16%;
 }
+
+
+
+/* ------ SECTION 4 ------- */
+
+.contactForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 4rem;
+}
+
+.contactText {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+input {
+  font-family: 'lulo'
+}
+
+.input {
+  background: none;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 1rem;
+}
+
+.inputTop {
+  padding: 1.2rem 0rem 1.2rem 2rem;
+  margin-right: .7rem;
+}
+
+.inputBottom {
+  padding: 0.8rem 26rem 24rem 1.2rem;
+  margin-top: 2rem
+}
+
+.inputBtnContainer {
+  padding: 0 16rem;
+}
+
+.inputBtn {
+  margin-top: 2rem;
+  background: none;
+  padding: 1.5rem 6rem;
+  border: 1px solid #CCA151;
+  color: #CCA151;
+  font-family: 'lulo';
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background: #212121;
+}
+
+.footerLogoSize {
+  height: 5.6rem;
+  width: 6.7rem;
+}
+
+.footerLogoImg {
+  height: 100%;
+  width: 100%;
+}

@@ -62,19 +62,11 @@ for (var i = 0; i < navItems.length; i++) {
     section1.scrollIntoView({
       behavior: 'smooth'
     });
-    for (var i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('dot-isActive');
-      dots[0].classList.toggle('dot-isActive');
-    }
   });
   navItems[1].addEventListener('click', function(){
     section2.scrollIntoView({
       behavior: 'smooth'
     });
-    for (var i = 0; i < dots.length; i++) {
-      dots[i].classList.remove('dot-isActive');
-      dots[1].classList.add('dot-isActive');
-    }
   });
   navItems[2].addEventListener('click', function(){
     section3.scrollIntoView({
