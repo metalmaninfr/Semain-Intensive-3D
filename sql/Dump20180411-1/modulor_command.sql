@@ -56,9 +56,20 @@ UNLOCK TABLES;
 -- Dump completed on 2018-04-11 11:33:52
 
 
-INSERT INTO
-  `command`
-  (id_user, price, nb_piece, stand_size, wall)
-VALUES
-  (2, 324, 4, 12, 10)
+SELECT
+id_command,
+id_user,
+price,
+nb_piece,
+stand_size,
+wall,
+light,
+chair,
+document_holder,
+home,
+flag
+FROM
+command
+WHERE
+id_user = 1
 ;

@@ -18,4 +18,5 @@ $stmt->bindValue(":command", $_GET["id"]);
 $stmt->bindValue(":user", $_SESSION["user"]["id"]);
 $stmt->execute();
 
-header("location: index.php");
+header("location: ./viewCommand.php");
+exit;
